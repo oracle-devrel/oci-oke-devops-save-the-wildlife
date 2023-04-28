@@ -69,7 +69,10 @@ You need an auth token to clone the repository using HTTPS.
    ![Github url](./images/oci-clone-with-https.png)
 
 3.  In your local github client or in your CLI run
-   `<copy>git clone <PASTE CLONE WITH HTTPS></copy>`
+   ```
+   <copy>git clone <PASTE CLONE WITH HTTPS></copy>
+   ```  
+   
 To authenticate you must provide your username (with tenancy, optional federated identity and username) and password (auth token) when prompted.
 
 For a federated user, enter the username in the following format: TenancyName/Federation/UserName. For example, if you use OCI's identity provider, your login would be, Acme/oracleidentitycloudservice/alice.jones@acme.com.
@@ -77,22 +80,34 @@ For a federated user, enter the username in the following format: TenancyName/Fe
 If you are using OCI's direct sign-in, enter the username in the following format: TenancyName/YourUserName. For example, Acme/alice_jones. Your password is the auth token you created previously.
 
 4. In terminal enter your cloned repository  
-   `<copy>cd oci-oke-devops-save-the-wildlife</copy>`
+   ```
+   <copy>cd oci-oke-devops-save-the-wildlife</copy>
+   ```
 
 5. TODO: Download project file  
-   `<copy>wget wget https://github.com/oracle-devrel/devlive-save-the-wildlife/archive/refs/heads/mvp.zip</copy>`
+   ```
+   <copy>wget wget https://github.com/oracle-devrel/devlive-save-the-wildlife/archive/refs/heads/mvp.zip</copy>
+   ```
 
 6. TODO: Unzip project  
-   `<copy>unzip mvp.zip</copy>`
+   ```
+   <copy>unzip mvp.zip</copy>
+   ```
 
 7. Add content content to commit.  
-   `<copy>git add .</copy>`
+   ```
+   <copy>git add .</copy>
+   ```
 
 8. Commit your local repository.  
-   `<copy>git commit -a -m "project init"</copy>`
+   ```
+   <copy>git commit -a -m "project init"</copy>
+   ```
 
 8. Push your repository.  
-   `<copy>git push</copy>`
+   ```
+   <copy>git push</copy>
+   ```
 
 You may now **proceed to the next lab**.
 
