@@ -1,6 +1,10 @@
 
 # Introduction
 
+## Save The Wildlife - automated CI/CD release pipeline for gaming
+
+TODO:
+
 ## About this workshop.
 
 You will learn how to build your infrastructure and automate the build and deployment of a Cloud Native Three.JS application to Oracle Kubernetes Engine(OKE).
@@ -43,9 +47,7 @@ Oracle Cloud Infrastructure DevOps service provides an end-to-end CI/CD platform
 - OCI Build pipelines – A serverless, scalable service to automate build, test, artefacts and deployment invocations.
 
 
-## Save the Wildlife
 
-TODO:
 
 You may now **proceed to the next lab**.
 
