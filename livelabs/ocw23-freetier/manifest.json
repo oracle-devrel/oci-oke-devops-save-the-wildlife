@@ -1,7 +1,7 @@
 {
   "workshoptitle": "Save the Wildlife - Automated CI/CD Release Pipelines for Gaming",
   "help": "eli.schilling@oracle.com,wojciech.pluta@oracle.com",
- "tutorials": [
+  "tutorials": [
     {
       "title": "Introduction",
       "description": "Introduction to the lab with OCI devops ",
@@ -31,7 +31,6 @@
       "title": "Lab4: Cleanup of lab resources",
       "description" : "Clean all the lab infra components",
       "filename":"../ocw23-livelabs/cleanup/cleanup.md"
-
     },
     {
       "title": "Oracle CloudWorld 2022 - Get Help",
