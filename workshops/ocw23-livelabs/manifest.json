@@ -1,11 +1,11 @@
 {
-  "workshoptitle": "Creating a fully automated CI/CD release pipeline with canary deployment strategy",
-  "help": "dex_dlc_sa_ww_grp@oracle.com",
+  "workshoptitle": "Save the Wildlife - Automated CI/CD Release Pipelines for Gaming",
+  "help": "eli.schilling@oracle.com,wojciech.pluta@oracle.com",
  "tutorials": [
     {
       "title": "Introduction",
       "description": "Introduction to the lab with OCI devops ",
-      "filename": "../../intro/intro.md"
+      "filename": "../ocw23-freetier/intro/intro.md"
     },
     {
       "title": "Get Started",
@@ -15,22 +15,22 @@
     {
       "title": "Lab 1: Provision the infrastructure",
       "description": "Instruction to provision OCI devops ,OKE and related infrastructure",
-      "filename": "../../deploy-infra/deploy-infra.md"
+      "filename": "../ocw23-freetier/deploy-infra/deploy-infra.md"
     },
     {
       "title": "Lab 2: Get to know more about OCI Devops components",
       "description": "Get to know more about OCI devops components and artifacts",
-      "filename": "../../devops-resources/devops-resources.md"
+      "filename": "../ocw23-freetier/devops-resources/devops-resources.md"
     },
     {
       "title": "Lab 3: New version release",
       "description": "Release a new version and experience canary mode",
-      "filename": "../../newrelease/newrelease.md"
+      "filename": "../ocw23-freetier/newrelease/newrelease.md"
     },
     {
       "title": "Lab4: Cleanup of lab resources",
       "description" : "Clean all the lab infra components",
-      "filename":"../../cleanup/cleanup.md"
+      "filename":"../ocw23-freetier/cleanup/cleanup.md"
 
     },
 
