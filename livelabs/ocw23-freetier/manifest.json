@@ -5,7 +5,7 @@
     {
       "title": "Introduction",
       "description": "Introduction to the lab with OCI devops ",
-      "filename": "../ocw23-freetier/intro/intro.md"
+      "filename": "../ocw23-livelabs/intro/intro.md"
     },
     {
       "title": "Get Started",
@@ -15,29 +15,27 @@
     {
       "title": "Lab 1: Provision the infrastructure",
       "description": "Instruction to provision OCI devops ,OKE and related infrastructure",
-      "filename": "../ocw23-freetier/deploy-infra/deploy-infra.md"
+      "filename": "../ocw23-livelabs/deploy-infra/deploy-infra.md"
     },
     {
       "title": "Lab 2: Get to know more about OCI Devops components",
       "description": "Get to know more about OCI devops components and artifacts",
-      "filename": "../ocw23-freetier/devops-pipeline/devops-pipeline.md"
+      "filename": "../ocw23-livelabs/devops-pipeline/devops-pipeline.md"
     },
     {
       "title": "Lab 3: New version release",
       "description": "Release a new version and experience canary mode",
-      "filename": "../ocw23-freetier/newrelease/newrelease.md"
+      "filename": "../ocw23-livelabs/newrelease/newrelease.md"
     },
     {
       "title": "Lab4: Cleanup of lab resources",
       "description" : "Clean all the lab infra components",
-      "filename":"../ocw23-freetier/cleanup/cleanup.md"
+      "filename":"../ocw23-livelabs/cleanup/cleanup.md"
 
     },
-
     {
       "title": "Oracle CloudWorld 2022 - Get Help",
       "filename": "https://oracle-livelabs.github.io/common/support/ocwsupportlab/ocwsupportlab.md"
-}
-
+    }
   ]
 }
