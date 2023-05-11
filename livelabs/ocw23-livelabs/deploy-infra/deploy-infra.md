@@ -33,17 +33,17 @@ In this lab, you will:
 1. Click on create stack  
    ![Github url](./images/oci-create-stack.png)  
 
-1. TODO: Download or zip Terraform folder  
+1. Add stack config zip  
 ![Github url](./images/oci-upload-stack-config.png)  
 
 1. Add your stack config  
-![Github url](./images/oci-upload-stack-config.png)  
+![Github url](./images/oci-stack-config.png)  
 
 1. Confirm Stack and Run Apply  
 ![Github url](./images/oci-run-apply.png)  
 
 1. Wait for stack to deploy
-![Github url](./images/oci-run-apply.png)  
+![Github url](./images/oci-stack-deploy.png)  
 
 ## Task 2: Create DevOPS project
 
