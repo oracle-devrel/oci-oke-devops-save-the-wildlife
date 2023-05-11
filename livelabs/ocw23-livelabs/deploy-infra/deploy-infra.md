@@ -23,7 +23,27 @@ In this lab, you will:
 * User that belongs to the Administrator group or has granted privileges to manage multiple OCI resources (IAM, ORM, DevOps, OKE, Network, etc).
 
 ## Task 1: Create VCN, ADB, and OKE Cluster with ORM 
-TODO:
+1. Click on hamburger menu.
+
+   ![Github url](./images/oci-main.png)
+
+1. Open on Developer Services and under Resource Manager select Stacks
+   ![Github url](./images/oci-developer-services.png)
+
+1. Click on create stack  
+   ![Github url](./images/oci-create-stack.png)  
+
+1. TODO: Download or zip Terraform folder  
+![Github url](./images/oci-upload-stack-config.png)  
+
+1. Add your stack config  
+![Github url](./images/oci-upload-stack-config.png)  
+
+1. Confirm Stack and Run Apply  
+![Github url](./images/oci-run-apply.png)  
+
+1. Wait for stack to deploy
+![Github url](./images/oci-run-apply.png)  
 
 ## Task 2: Create DevOPS project
 
@@ -84,9 +104,9 @@ If you are using OCI's direct sign-in, enter the username in the following forma
    <copy>cd oci-oke-devops-save-the-wildlife</copy>
    ```
 
-5. TODO: Download project file  
+5. Download project file  
    ```
-   <copy>wget wget https://github.com/oracle-devrel/devlive-save-the-wildlife/archive/refs/heads/mvp.zip</copy>
+   <copy>wget https://github.com/oracle-devrel/oci-oke-appdev-save-the-wildlife/releases/download/mvp-v1/oci-oke-save-the-wildlife-latest.zip</copy>
    ```
 
 6. TODO: Unzip project  

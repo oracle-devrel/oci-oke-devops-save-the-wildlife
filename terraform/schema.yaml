@@ -4,7 +4,7 @@
     title: "Save the Wildlife - Automated CI/CD Release Pipeline for Gaming."
     stackDescription: "Automated CI/CD Release for Gaming with Oracle Container Engine for Kubernetes (OKE) in Oracle Cloud Infrastructure (OCI)."
     schemaVersion: 1.1.0
-    version: "20190404"
+    version: "20230404"
     locale: "en"
 
     variableGroups:
