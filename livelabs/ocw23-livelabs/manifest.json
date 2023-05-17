@@ -5,7 +5,7 @@
     {
       "title": "Introduction",
       "description": "Introduction to the lab with OCI devops ",
-      "filename": "../../intro/intro.md"
+      "filename": "intro/intro.md"
     },
     {
       "title": "Get Started",
@@ -15,22 +15,22 @@
     {
       "title": "Lab 1: Provision the infrastructure",
       "description": "Instruction to provision OCI devops ,OKE and related infrastructure",
-      "filename": "../deploy-infra/deploy-infra.md"
+      "filename": "deploy-infra/deploy-infra.md"
     },
     {
       "title": "Lab 2: Create build and deploy pipeline",
       "description": "Interact and create OCI devops build and deploy pipeline",
-      "filename": "../devops-pipeline/devops-pipeline.md"
+      "filename": "devops-pipeline/devops-pipeline.md"
     },
     {
       "title": "Lab 3: Deploy new feature with automated trigger",
       "description": "Release a new version and automate your build process",
-      "filename": "../newrelease/newrelease.md"
+      "filename": "newrelease/newrelease.md"
     },
     {
       "title": "Lab4: Cleanup of lab resources",
       "description" : "Clean all the lab infra components",
-      "filename":"../cleanup/cleanup.md"
+      "filename":"cleanup/cleanup.md"
 
     },
 
