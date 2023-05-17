@@ -1,0 +1,43 @@
+{
+  "workshoptitle": "Save The Wildlife - automated CI/CD release pipeline for gaming",
+  "help": "dex_dlc_sa_ww_grp@oracle.com",
+  "tutorials": [
+    {
+      "title": "Introduction",
+      "description": "Introduction to the lab with OCI devops ",
+      "filename": "../../intro/intro.md"
+    },
+    {
+      "title": "Get Started",
+      "description": "This is the prerequisites for customers using Free Trial and Paid tenancies, and Always Free accounts (if applicable). The title of the lab and the Contents Menu title (the title above) match for Prerequisite lab. This lab is always first.",
+      "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
+    },
+    {
+      "title": "Lab 1: Provision the infrastructure",
+      "description": "Instruction to provision OCI devops ,OKE and related infrastructure",
+      "filename": "../../deploy-infra/deploy-infra.md"
+    },
+    {
+      "title": "Lab 2: Create build and deploy pipeline",
+      "description": "Interact and create OCI devops build and deploy pipeline",
+      "filename": "../../devops-pipeline/devops-pipeline.md"
+    },
+    {
+      "title": "Lab 3: Deploy new feature with automated trigger",
+      "description": "Release a new version and automate your build process",
+      "filename": "../../newrelease/newrelease.md"
+    },
+    {
+      "title": "Lab4: Cleanup of lab resources",
+      "description" : "Clean all the lab infra components",
+      "filename":"../../cleanup/cleanup.md"
+
+    },
+
+    {
+      "title": "Need Help?",
+      "description": "Solutions to Common Problems and Directions for Receiving Live Help",
+      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
+    }
+  ]
+}
