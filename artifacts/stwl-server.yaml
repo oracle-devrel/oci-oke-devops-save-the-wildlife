@@ -1,0 +1,191 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: redis
+  name: redis
+spec:
+  ports:
+  - port: 6379
+    protocol: TCP
+    targetPort: 6379
+  selector:
+    app: redis
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: redis
+spec:
+  serviceName: redis
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+  template:
+    metadata:
+      labels:
+        app: redis
+    spec:
+      containers:
+      - name: redis
+        image: redis:7
+        livenessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
+        readinessProbe:
+          exec:
+            command:
+            - redis-cli
+            - ping
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
+        command:
+        - "redis-server"
+        - "/etc/redis/redis.conf"
+        ports:
+        - containerPort: 6379
+          name: redis
+        volumeMounts:
+        - name: data
+          mountPath: /data
+        - name: config
+          mountPath: /etc/redis
+      volumes:
+        - name: data
+          emptyDir:
+            sizeLimit: 500Mi
+        - name: config
+          configMap:
+            name: redis-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: coherence
+  name: coherence
+spec:
+  ports:
+  - port: 1408
+    protocol: TCP
+    targetPort: 1408
+  selector:
+    app: coherence
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: coherence
+  name: coherence
+spec:
+  minReadySeconds: 30
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coherence
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: coherence
+    spec:
+      containers:
+        - image: ghcr.io/oracle/coherence-ce:23.03
+          name: coherence
+          readinessProbe:
+            tcpSocket:
+              port: 1408
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          ports:
+            - containerPort: 1408
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 250m
+              memory: 521Mi
+      imagePullSecrets:
+        - name: ocir-secret
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: ws-server
+  name: ws-server
+spec:
+  minReadySeconds: 100
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ws-server
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: ws-server
+    spec:
+      initContainers:
+      - name: wait-for-redis
+        image: redis
+        imagePullPolicy: IfNotPresent
+        args: [ 'sh', '-c', 'sleep 60s' ]
+      containers:
+        - image: phx.ocir.io/axywji1aljc2/web:${BUILDRUN_HASH}
+          name: ws-server
+          readinessProbe:
+            tcpSocket:
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+          ports:
+            - containerPort: 3000
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 250m
+              memory: 521Mi
+          env:
+          - name: NODE_ENV
+            value: "production"
+          volumeMounts:
+          - name: config-volume
+            mountPath: /usr/src/app/config
+      volumes:
+      - name: config-volume
+        configMap:
+          name: ws-server-env
+      imagePullSecrets:
+        - name: ocir-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ws-server
+  name: ws-server
+spec:
+  ports:
+  - port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: ws-server
