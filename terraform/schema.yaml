@@ -113,7 +113,7 @@
         description: "ATP Database Password for ADMIN user."
         minLength: 12
         maxLength: 30
-        pattern: ^[A-Za-z][A-Za-z0-9_#\$]+$ 
+        pattern: ^[A-Za-z][A-Za-z0-9_#\$!]+$
 
       # Optional Configuration     
 

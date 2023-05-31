@@ -111,7 +111,7 @@ If you are using OCI's direct sign-in, enter the username in the following forma
 
 6. TODO: Unzip project  
    ```
-   <copy>unzip mvp.zip</copy>
+   <copy>unzip oci-oke-save-the-wildlife-latest.zip</copy>
    ```
 
 7. Add content content to commit.  

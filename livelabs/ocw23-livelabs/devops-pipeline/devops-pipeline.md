@@ -1,8 +1,6 @@
 # Get to know OCI DevOps and related resources.
 
 ## Introduction
-
-
 Estimated time: 20 minutes
 
 ### Objectives
@@ -128,27 +126,11 @@ outputArtifacts:
     type: DOCKER_IMAGE
     location: server:latest
 ```
-    ![Github url](./images/build-pipeline/associate-artifacts.png)
-
-## Learn More
-
-* [OCI Devops documentation](https://docs.oracle.com/en-us/iaas/Content/devops/using/home.htm)
+![Github url](./images/build-pipeline/associate-artifacts.png)
 
 
 ## Acknowledgements
 
 * **Author** - 
 * **Contributors** -
-* **Last Updated By/Date** - 
-
-
-
-
-
-
-    
-
-
-
-
-
+* **Last Updated By/Date** -
