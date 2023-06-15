@@ -33,8 +33,6 @@ In this lab, as a developer or SRE,
    ![Github url](./images/artifacts/oci-devops-artifact-uploaded.png)
 
 
-You may now **proceed to the next lab**.
-
 ## Task 2: Seting up build pipeline
 1. From project home page navigate to _Build Pipelines_.
 2. Click _Create build pipeline_
@@ -127,6 +125,9 @@ outputArtifacts:
     location: server:latest
 ```
 ![Github url](./images/build-pipeline/associate-artifacts.png)
+
+
+You may now **proceed to the next lab**.
 
 
 ## Acknowledgements
